@@ -6,14 +6,14 @@ PLEASE READ QUESTIONS ASKED CAREFULLY!
 Dependencies: `sudo apt-get install git`
 
 ### Download
-Git tree: https://github.com/dury10/XMGminerInstaller </br>
-Clone with: `git clone https://github.com/dury10/XMGminerInstaller`
+Git tree: https://github.com/dury10/xmgMinerInstaller </br>
+Clone with: `https://github.com/dury10/xmgMinerInstaller`
 
 ### Build
 ```
- cd XMGminerInstaller
- sudo chmod +x XMG_Installer.sh
- sudo ./XMG_Installer
+ cd xmgMinerInstaller
+ sudo chmod +x xmg_linux.sh
+ sudo ./xmg_linux
 ```
 
 
