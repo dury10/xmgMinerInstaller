@@ -13,7 +13,7 @@ Clone with: `https://github.com/dury10/xmgMinerInstaller`
 ```
  cd xmgMinerInstaller
  sudo chmod +x xmg_linux.sh
- sudo ./xmg_linux
+ sudo ./xmg_linux.sh
 ```
 
 
