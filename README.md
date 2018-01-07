@@ -7,13 +7,13 @@ Dependencies: `sudo apt-get install git`
 
 ### Download
 Git tree: https://github.com/dury10/xmgMinerInstaller </br>
-Clone with: `https://github.com/dury10/xmgMinerInstaller`
+Clone with: `git clone https://github.com/dury10/xmgMinerInstaller`
 
 ### Build
 ```
  cd xmgMinerInstaller
  sudo chmod +x xmg_linux.sh
- sudo ./xmg_linux
+ sudo ./xmg_linux.sh
 ```
 
 
