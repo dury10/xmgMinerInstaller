@@ -23,6 +23,6 @@ Clone with: `git clone https://github.com/dury10/xmgMinerInstaller`
 ### License
 GPLv2. See LICENSE for details.
 
-### Happi Mining!!!
+### Happy Mining!!!
 
 This is a fork from phiten
