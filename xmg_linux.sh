@@ -41,7 +41,7 @@ compilex86_64 () {
 
                                 DEBIAN_FRONTEND=noninteractive apt-get -y -qq update > /dev/null 2>&1
                                 DEBIAN_FRONTEND=noninteractive apt-get -y -qq upgrade > /dev/null 2>&1
-                                DEBIAN_FRONTEND=noninteractive apt-get -y -qq install make git automake autoconf pkg-config libcurl4-openssl-dev libjansson-dev libssl-$
+                                DEBIAN_FRONTEND=noninteractive apt-get -y -qq install automake autoconf pkg-config libcurl4-openssl-dev libjansson-dev libssl-dev libgmp-dev make g++ git libgmp-dev > /dev/null 2>&1
                                 git clone https://github.com/magi-project/m-cpuminer-v2 > /dev/null 2>&1
                                 cd m-cpuminer-v2
                                 sudo ./autogen.sh > /dev/null 2>&1
@@ -81,7 +81,7 @@ compilearmv71 () {
            [yY]* ) 
 				DEBIAN_FRONTEND=noninteractive apt-get -y -qq update > /dev/null 2>&1
                                 DEBIAN_FRONTEND=noninteractive apt-get -y -qq upgrade > /dev/null 2>&1
-                                DEBIAN_FRONTEND=noninteractive apt-get -y -qq install make git automake autoconf pkg-config libcurl4-openssl-dev libjansson-dev libssl-$
+                                DEBIAN_FRONTEND=noninteractive apt-get -y -qq install automake autoconf pkg-config libcurl4-openssl-dev libjansson-dev libssl-dev libgmp-dev make g++ git libgmp-dev  > /dev/null 2>&1
                                 git clone https://github.com/magi-project/m-cpuminer-v2 > /dev/null 2>&1
                                 cd m-cpuminer-v2
                                 sudo ./autogen.sh > /dev/null 2>&1
@@ -117,7 +117,7 @@ compileaarch64 () {
            [yY]* )  
 				DEBIAN_FRONTEND=noninteractive apt-get -y -qq update > /dev/null 2>&1
                                 DEBIAN_FRONTEND=noninteractive apt-get -y -qq upgrade > /dev/null 2>&1
-                                DEBIAN_FRONTEND=noninteractive apt-get -y -qq install make git automake autoconf pkg-config libcurl4-openssl-dev libjansson-dev libssl-$
+                                DEBIAN_FRONTEND=noninteractive apt-get -y -qq install automake autoconf pkg-config libcurl4-openssl-dev libjansson-dev libssl-dev libgmp-dev make g++ git libgmp-dev > /dev/null 2>&1
                                 git clone https://github.com/magi-project/m-cpuminer-v2 > /dev/null 2>&1
                                 cd m-cpuminer-v2
                                 sudo ./autogen.sh > /dev/null 2>&1
