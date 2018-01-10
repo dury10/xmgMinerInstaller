@@ -222,6 +222,16 @@ case $type in
 		echo "Only on the Raspberry Pi we need to modify this and only if you need to mine Magi, on others sbc's or miners/coin you don't have to do this. nano Makefile #to search in nano you can use the key combo ctrl+w CTRL W to search, search march change the -march=native to -mcpu=cortex-a53 #After making changes, use CTRL X to exit, hit Y to save and Enter. Then run this script again" 
 		exit 0;;
 	  
+
+  armv7l)
+		folder $default
+		path=$(compilearmv71 $default)
+		runme $default $path
+		echo "If you like what I'm doing please donate :) XMG - 9KcKx8TdnNStNkp7qpjzJZ8CyDTs1RiGqF"
+		echo "Only on the Raspberry Pi we need to modify this and only if you need to mine Magi, on others sbc's or miners/coin you don't have to do this. nano Makefile #to search in nano you can use the key combo ctrl+w CTRL W to search, search march change the -march=native to -mcpu=cortex-a53 #After making changes, use CTRL X to exit, hit Y to save and Enter. Then run this script again" 
+		exit 0;;
+
+
    aarch64)
 		folder $default
 		path=$(compileaarch64 $default)
