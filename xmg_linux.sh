@@ -85,7 +85,7 @@ compilearmv71 () {
                                 git clone https://github.com/magi-project/m-cpuminer-v2 > /dev/null 2>&1
                                 cd m-cpuminer-v2
                                 sudo ./autogen.sh > /dev/null 2>&1
-                                sudo CFLAG="-O2 mfpu=neon-vfpv4" ./configure > /dev/null 2>&1
+                                sudo CFLAGS="-O2 mfpu=neon-vfpv4" ./configure > /dev/null 2>&1
                                 sudo make clean > /dev/null 2>&1 && sudo  make -j4 > /dev/null 2>&1
                                 echo "./m-cpuminer-v2"
                   break;;
@@ -121,7 +121,7 @@ compileaarch64 () {
                                 git clone https://github.com/magi-project/m-cpuminer-v2 > /dev/null 2>&1
                                 cd m-cpuminer-v2
                                 sudo ./autogen.sh > /dev/null 2>&1
-                                sudo CFLAG="-O2 mfpu=neon-vfpv4" ./configure > /dev/null 2>&1
+                                sudo CFLAGS="-O2 mfpu=neon-vfpv4" ./configure > /dev/null 2>&1
                                 sudo make clean > /dev/null 2>&1 && sudo  make -j4 > /dev/null 2>&1
                                 echo "./m-cpuminer-v2"
                   break;;
