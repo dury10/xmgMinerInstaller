@@ -1,6 +1,8 @@
 This script will install magi-project/m-cpuminer-v2's XMG MINER (https://github.com/magi-project/m-cpuminer-v2).
 
-### Note: This script I made it and test it on/ for Raspberry Pi with 64 bit OS - I don't have another Unix to test it and on this one works. If you want to learn how to install Pi64 OS take a look here https://steemit.com/raspberry/@dury10/how-to-install-64-bit-os-on-a-raspberry-pi-3-step-by-step-for-newbies
+### 10 Ian 2018 new updates: Architecture: armv71, armv7l, x86_64 just added
+
+### After the updates Tested the script also on Orange Pi with armv7l and it works.
 
 ### Dependencies
 Dependencies: `sudo apt-get install git`
@@ -26,3 +28,6 @@ GPLv2. See LICENSE for details.
 ### Happy Mining!!!
 
 This is a fork from phiten
+
+### Note: This script I made it and test it on/ for Raspberry Pi with 64 bit OS - I don't have another Unix to test it and on this one works. If you want to learn how to install Pi64 OS take a look here https://steemit.com/raspberry/@dury10/how-to-install-64-bit-os-on-a-raspberry-pi-3-step-by-step-for-newbies
+
