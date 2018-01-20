@@ -44,9 +44,9 @@ compilex86_64 () {
                                 DEBIAN_FRONTEND=noninteractive apt-get -y -qq install automake autoconf pkg-config libcurl4-openssl-dev libjansson-dev libssl-dev libgmp-dev make g++ git libgmp-dev > /dev/null 2>&1
                                 git clone https://github.com/magi-project/m-cpuminer-v2 > /dev/null 2>&1
                                 cd m-cpuminer-v2
-                                sudo ./autogen.sh > /dev/null 2>&1
-                                sudo ./configure CFLAGS="-O3" CXXFLAGS="-O3" > /dev/null 2>&1
-                                sudo make clean > /dev/null 2>&1 && sudo  make -j > /dev/null 2>&1
+                                ./autogen.sh > /dev/null 2>&1
+                                ./configure CFLAGS="-O3" CXXFLAGS="-O3" > /dev/null 2>&1
+                                make clean > /dev/null 2>&1 &&  make -j > /dev/null 2>&1
                                 echo "./m-cpuminer-v2"
 
 
@@ -84,9 +84,9 @@ compilearmv71 () {
                                 DEBIAN_FRONTEND=noninteractive apt-get -y -qq install automake autoconf pkg-config libcurl4-openssl-dev libjansson-dev libssl-dev libgmp-dev make g++ git libgmp-dev  > /dev/null 2>&1
                                 git clone https://github.com/magi-project/m-cpuminer-v2 > /dev/null 2>&1
                                 cd m-cpuminer-v2
-                                sudo ./autogen.sh > /dev/null 2>&1
-                                sudo CFLAGS="-O2 mfpu=neon-vfpv4" ./configure > /dev/null 2>&1
-                                sudo make clean > /dev/null 2>&1 && sudo  make -j4 > /dev/null 2>&1
+                                ./autogen.sh > /dev/null 2>&1
+                                CFLAGS="-O2 mfpu=neon-vfpv4" ./configure > /dev/null 2>&1
+                                make clean > /dev/null 2>&1 &&  make -j4 > /dev/null 2>&1
                                 echo "./m-cpuminer-v2"
                   break;;
 
@@ -120,9 +120,9 @@ compileaarch64 () {
                                 DEBIAN_FRONTEND=noninteractive apt-get -y -qq install automake autoconf pkg-config libcurl4-openssl-dev libjansson-dev libssl-dev libgmp-dev make g++ git libgmp-dev > /dev/null 2>&1
                                 git clone https://github.com/magi-project/m-cpuminer-v2 > /dev/null 2>&1
                                 cd m-cpuminer-v2
-                                sudo ./autogen.sh > /dev/null 2>&1
-                                sudo CFLAGS="-O2 mfpu=neon-vfpv4" ./configure > /dev/null 2>&1
-                                sudo make clean > /dev/null 2>&1 && sudo  make -j4 > /dev/null 2>&1
+                                ./autogen.sh > /dev/null 2>&1
+                                CFLAGS="-O2 mfpu=neon-vfpv4" ./configure > /dev/null 2>&1
+                                make clean > /dev/null 2>&1 &&  make -j4 > /dev/null 2>&1
                                 echo "./m-cpuminer-v2"
                   break;;
 
