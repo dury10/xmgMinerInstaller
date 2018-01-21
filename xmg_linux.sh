@@ -10,6 +10,10 @@ if [ "$(id -u)" != "0" ]; then
 	exit 1
 fi
 
+plsGiveMeXMG(){
+	echo "If you like what I'm doing please donate :) XMG - 9KcKx8TdnNStNkp7qpjzJZ8CyDTs1RiGqF"
+}
+
 folder () { 
 
 	if [ $1 -eq 0 ]; then 
@@ -211,14 +215,14 @@ case $type in
 		path=$(compilex86_64 $default)
 		hugepages $default
 		runme $default $path
-		echo "If you like what I'm doing please donate :) XMG - 9KcKx8TdnNStNkp7qpjzJZ8CyDTs1RiGqF"
+		plsGiveMeXMG
 		exit 0;;
        
    armv71)
 		folder $default
 		path=$(compilearmv71 $default)
 		runme $default $path
-		echo "If you like what I'm doing please donate :) XMG - 9KcKx8TdnNStNkp7qpjzJZ8CyDTs1RiGqF"
+		plsGiveMeXMG
 		echo "Only on the Raspberry Pi we need to modify this and only if you need to mine Magi, on others sbc's or miners/coin you don't have to do this. nano Makefile #to search in nano you can use the key combo ctrl+w CTRL W to search, search march change the -march=native to -mcpu=cortex-a53 #After making changes, use CTRL X to exit, hit Y to save and Enter. Then run this script again" 
 		exit 0;;
 	  
@@ -227,7 +231,7 @@ case $type in
 		folder $default
 		path=$(compilearmv71 $default)
 		runme $default $path
-		echo "If you like what I'm doing please donate :) XMG - 9KcKx8TdnNStNkp7qpjzJZ8CyDTs1RiGqF"
+		plsGiveMeXMG
 		echo "Only on the Raspberry Pi we need to modify this and only if you need to mine Magi, on others sbc's or miners/coin you don't have to do this. nano Makefile #to search in nano you can use the key combo ctrl+w CTRL W to search, search march change the -march=native to -mcpu=cortex-a53 #After making changes, use CTRL X to exit, hit Y to save and Enter. Then run this script again" 
 		exit 0;;
 
@@ -236,7 +240,7 @@ case $type in
 		folder $default
 		path=$(compileaarch64 $default)
 		runme $default $path
-		echo "If you like what I'm doing please donate :) XMG - 9KcKx8TdnNStNkp7qpjzJZ8CyDTs1RiGqF"
+		plsGiveMeXMG
 		exit 0;;
 		
   * )   echo "Your CPU Architecture is not supported. Sorry"
